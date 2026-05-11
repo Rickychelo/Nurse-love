@@ -5,6 +5,7 @@ import LoveReasons from "./components/LoveReasons";
 import LoveLetter from "./components/LoveLetter";
 import Counter from "./components/Counter";
 import PremiumGallery from "./components/PremiumGallery";
+import FloatingHearts from "./components/FloatingHearts";
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
         <AuroraBackground />
       </div>
 
+      <FloatingHearts />   
+    
       {/* HERO */}
       <section className="relative z-10 min-h-screen flex items-center justify-center px-6">
 
