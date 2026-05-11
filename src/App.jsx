@@ -1,4 +1,3 @@
-
 import Loader from "./components/Loader";
 import AuroraBackground from "./components/AuroraBackground";
 import TypingText from "./components/TypingText";
@@ -9,13 +8,15 @@ import PremiumGallery from "./components/PremiumGallery";
 
 export default function App() {
   return (
-    <div className="relative bg-black text-white overflow-x-hidden">
+    <div className="relative min-h-screen bg-black text-white overflow-hidden">
 
       {/* Loader */}
       <Loader />
 
-      {/* Aurora Background */}
-      <AuroraBackground />
+      {/* Fondo Aurora */}
+      <div className="fixed inset-0 -z-10">
+        <AuroraBackground />
+      </div>
 
       {/* HERO */}
       <section className="relative z-10 min-h-screen flex items-center justify-center px-6">
@@ -27,13 +28,13 @@ export default function App() {
             mx-auto
             text-center
             backdrop-blur-3xl
-            bg-white/2
-            border border-white/5
+            bg-white/5
+            border border-white/10
             rounded-[40px]
             px-8
             py-20
             md:px-20
-            shadow-[0_0_80px_rgba(255,255,255,0.03)]
+            shadow-[0_0_80px_rgba(255,255,255,0.05)]
           "
         >
 
@@ -90,32 +91,48 @@ export default function App() {
       </section>
 
       {/* RAZONES */}
-      <LoveReasons />
-<br /><br />
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <LoveReasons />
+        </div>
+      </section>
+
       {/* COUNTER */}
-      <Counter />
-<br /><br />
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <Counter />
+        </div>
+      </section>
+
       {/* GALERÍA */}
-      <PremiumGallery />
-<br /><br />
-      {/* CARTA EXPANDIBLE */}
-      <LoveLetter />
-<br /><br />
-      {/* CARTA FINAL */}
-      <section className="relative z-10 py-52 px-6">
-<br /><br />
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <PremiumGallery />
+        </div>
+      </section>
+
+      {/* CARTA */}
+      <section className="relative z-10 py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <LoveLetter />
+        </div>
+      </section>
+
+      {/* MENSAJE FINAL */}
+      <section className="relative z-10 py-32 px-6">
+
         <div
           className="
             max-w-5xl
             mx-auto
             backdrop-blur-3xl
-            bg-white/2
-            border border-white/5
+            bg-white/5
+            border border-white/10
             rounded-[40px]
             p-10
             md:p-16
             text-center
-            shadow-[0_0_80px_rgba(255,255,255,0.02)]
+            shadow-[0_0_80px_rgba(255,255,255,0.03)]
           "
         >
 
@@ -140,10 +157,10 @@ export default function App() {
 
           <p className="mt-16 text-3xl text-pink-300">
             Con mucho amor ❤️
-            <br />  
-            Tu Ricky que te Ama Mucho❤️
+            <br />
+            Tu Ricky que te Ama Mucho ❤️
           </p>
- <br />   <br />  
+
         </div>
 
       </section>
