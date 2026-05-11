@@ -88,7 +88,7 @@ const photos = [
   {
     image: "/photos/21.JPG",
     caption:
-      "Nunca olvides lo increíble que eres ❤️",
+      "Nunca olvides lo increíble que eres: una enfermera admirable, una mujer maravillosa y una persona capaz de iluminar la vida de quienes te rodean ❤️",
   },
 ];
 
