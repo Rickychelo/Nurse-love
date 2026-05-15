@@ -1,6 +1,6 @@
 export default function Counter() {
 
-  const startDate = new Date("2023-10-15");
+  const startDate = new Date("2022-10-15");
   const today = new Date();
 
   const diffTime = Math.abs(today - startDate);
